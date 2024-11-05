@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const geistMono = localFont({
-  src: "./path-to-font-file.ttf",
+  src: "../assets/fonts/geist-mono-font-family-1730335527-0/GeistMono-Black-BF65694d04ad722.otf",
   variable: "--font-geist-mono"
 });
 

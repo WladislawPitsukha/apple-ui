@@ -8,9 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'helvetica': ['Helvetica Neue', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'navbar-color': 'rgba(22, 22, 23, 0.8)',
+        'custom-white': 'rgba(245, 245, 247, 1)',
+        'custom-blue': 'rgba(41, 151, 255, 1)',
+        'custom-gray': 'rgba(110, 110, 115, 1)',
+        'light-white': 'rgb(255 247 247 / 85%)',
+        'light-blue': 'rgba(0, 102, 204, 1)'
+      },
+      letterSpacing: {
+        'custom-1': '-0.28px',
+        'custom-2': '0.112px',
+        'custom-3': '0.231px',
       },
     },
   },
