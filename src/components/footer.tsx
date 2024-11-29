@@ -7,8 +7,8 @@ export default function Footer() {
             <section className="">
 
             </section>
-            <section className="">
-
+            <section className="flex justify-between items-start">
+                
             </section>
             <section className="flex flex-col items-start gap-5">
                 <article className="flex gap-5 items-center justify-between">

@@ -6,22 +6,22 @@ type FotterProps = {
 export const arrFotProps: FotterProps[] = [
     {
         title: "Privacy Policy",
-        link: ""
+        link: "https://example.com/privacy-policy"
     },
     {
         title: "Terms of Use",
-        link: ""
+        link: "https://example.com/terms-of-use"
     },
     {
         title: "Sales and Refunds",
-        link: ""
+        link: "https://example.com/sales-and-refunds"
     },
     {
         title: "Legal",
-        link: ""
+        link: "https://example.com/legal"
     },
     {
         title: "Site Map",
-        link: ""
+        link: "https://example.com/site-map"
     },
 ]
