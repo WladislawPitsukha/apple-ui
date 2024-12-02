@@ -19,13 +19,19 @@ const config: Config = {
         'custom-blue': 'rgba(41, 151, 255, 1)',
         'custom-gray': 'rgba(110, 110, 115, 1)',
         'light-white': 'rgb(255 247 247 / 85%)',
-        'light-blue': 'rgba(0, 102, 204, 1)'
+        'light-blue': 'rgba(0, 102, 204, 1)',
+        'custom-dark': 'rgba(29, 29, 31, 1)',
+        'custom-dark-gray': 'rgba(66, 66, 69, 1)'
       },
       letterSpacing: {
         'custom-1': '-0.28px',
         'custom-2': '0.112px',
         'custom-3': '0.231px',
+        'tight-custom': '-0.12px',
       },
+      textDecorationThickness: {
+        'no-underline': 'none'
+      }
     },
   },
   plugins: [],

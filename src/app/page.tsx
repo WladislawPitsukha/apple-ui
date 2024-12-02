@@ -1,3 +1,4 @@
+import CarouselAdve from "@/components/CarouselAdve";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import ProductArt from "@/components/productArt";
@@ -36,6 +37,7 @@ export default function Home() {
             />
           ))}
         </section>
+        <CarouselAdve />
       </main>
       <Footer />
     </div>
