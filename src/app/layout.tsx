@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const geistMono = localFont({
   src: "../assets/fonts/geist-mono-font-family-1730335527-0/GeistMono-Black-BF65694d04ad722.otf",
@@ -22,7 +24,11 @@ export default function RootLayout({
       <body
         className={geistMono.variable}
       >
-        {children}
+        <NavBar />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

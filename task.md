@@ -27,6 +27,8 @@
 - [ ] to make macbook's page ((macbook's page))
 - [ ] to make layout.tsx ((macbook's page))
 - [ ] to make page.tsx (macbook's page)
+- [ ] to make not_found's page
+- [ ] to make error's page
 
 ***
 
@@ -42,6 +44,8 @@
 - [ ] to organize page's structure
 - [ ] to add navbar and footer the page's layout.tsx ((MAIN PAGE))
 - [ ] to add new pages for project
+- [ ] to make not_found's page
+- [ ] to make error's page
 
 ***
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaApple } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
@@ -21,9 +22,8 @@ export default function NavBar() {
             <FaApple className="text-white text-2xl" />
             <article className="flex space-x-4">
                 {links.map((item, index) => (
-                    <a 
+                    <Link
                         href={`/${item.toLocaleLowerCase()}`}
-                        className="no-underline"
                         key={index}
                     >
                         <h3
@@ -31,7 +31,7 @@ export default function NavBar() {
                         >
                             {item}
                         </h3>
-                    </a>
+                    </Link>
                 ))}
             </article>
             <article className="flex space-x-4">

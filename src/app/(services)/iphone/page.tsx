@@ -1,7 +1,7 @@
 export default function IphonePage() {
     return(
-        <main className="">
+        <div className="">
         
-        </main>
+        </div>
     )
 }

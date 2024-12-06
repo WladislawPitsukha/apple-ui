@@ -1,6 +1,4 @@
-import CarouselAdve from "@/components/CarouselAdve";
-import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
+import CarouselAdve from "@/components/carouselAdve";
 import ProductArt from "@/components/productArt";
 import { productProps } from "@/utils/ProductArtArr";
 
@@ -11,7 +9,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <NavBar />
       <main className="flex flex-col">
         {flexArr.map(item => (
           <ProductArt 
@@ -39,7 +36,6 @@ export default function Home() {
         </section>
         <CarouselAdve />
       </main>
-      <Footer />
     </div>
   );
 }
