@@ -18,6 +18,9 @@
 ***
 
 ### Current part
+
+- [ ] to create a new branch for macbook's page
+
 - [ ] to make macbook's page ((macbook's page))
 - [ ] to make page.tsx ((macbook's page))
 - [ ] to add images to 2nd & 3rd section ((macbook's page))
@@ -26,18 +29,22 @@
 - [ ] to make section of 1st pazzles of desc ((macbook's page))
 - [ ] to make section of description of pages ((macbook's page))
 - [ ] to make section of 2nd pazzles of desc ((macbook's page))
-  
+
 - [ ] to make section of app of build ((macbook's page))
 - [ ] to make section of app of pro ((macbook's page))
 - [ ] to make section of 3nd pazzles of desc ((macbook's page))
 - [ ] to make section of 4th pazzles (flex) of desc ((macbook's page))
 
 
+- [ ] to create a new branch for watch's page
+
 - [ ] to make watch's page ((watch's page))
 - [ ] to make section of 1st image ((watch's page))
 - [ ] to make section of 2nd image ((watch's page))
 - [ ] to make section of 3rd image ((watch's page))
 
+
+- [ ] to create a new branch for iphone's page
 
 - [ ] to make iphone's page (())
 - [ ] to make section of 1st image ((watch's page))
