@@ -18,6 +18,7 @@ const config: Config = {
         'custom-white': 'rgba(245, 245, 247, 1)',
         'custom-blue': 'rgba(41, 151, 255, 1)',
         'custom-gray': 'rgba(110, 110, 115, 1)',
+        'custom-orange': 'rgba(245, 99, 0, 1)',
         'light-white': 'rgb(255 247 247 / 85%)',
         'light-blue': 'rgba(0, 102, 204, 1)',
         'custom-dark': 'rgba(29, 29, 31, 1)',
