@@ -14,16 +14,21 @@
 - [ x ] to finish the Footer ((main page))
 - [ x ] to make layout.tsx ((macbook's page))
 - [ x ] to make layout.tsx ((watch's page))
+- [ x ] to make page.tsx ((macbook's page))
+- [ x ] to add images to 2nd & 3rd section ((macbook's page))
+- [ x ] to create a new branch for macbook's page
+- [ x ] to make section of 1st image ((watch's page))
+- [ x ] to make section of 2nd image ((watch's page))
+- [ x ] to make section of 3rd image ((watch's page))
+- [ x ] to create a new branch for watch_func page
 
 ***
 
 ### Current part
 
-- [ ] to create a new branch for macbook's page
 
 - [ ] to make macbook's page ((macbook's page))
-- [ ] to make page.tsx ((macbook's page))
-- [ ] to add images to 2nd & 3rd section ((macbook's page))
+
 - [ ] to make grid container of products ((macbook's page))
 
 - [ ] to make section of 1st pazzles of desc ((macbook's page))
@@ -36,20 +41,25 @@
 - [ ] to make section of 4th pazzles (flex) of desc ((macbook's page))
 
 
-- [ ] to create a new branch for watch's page
-
 - [ ] to make watch's page ((watch's page))
-- [ ] to make section of 1st image ((watch's page))
-- [ ] to make section of 2nd image ((watch's page))
-- [ ] to make section of 3rd image ((watch's page))
+
+- [ ] to make the func of sections ((watch's page))
+- [ ] to make grid container / pazzles of products ((watch's page))
+
+- [ ] to pull request to main branch from branch watch_func  
 
 
 - [ ] to create a new branch for iphone's page
 
-- [ ] to make iphone's page (())
-- [ ] to make section of 1st image ((watch's page))
-- [ ] to make section of 2nd image ((watch's page))
-- [ ] to make section of 13rd image ((watch's page))
+- [ ] to make iphone's page ((iphone's page))
+
+- [ ] to make section of 1st image ((iphone's page))
+- [ ] to make section of 2nd image ((iphone's page))
+- [ ] to make section of 13rd image ((iphone's page))
+- [ ] to make the func of sections ((iphone's page))
+- [ ] to make grid container / pazzles of products ((iphone's page))
+
+- [ ] to pull request to main branch from branch iphone 
 
 
 
