@@ -12,6 +12,7 @@ export default function Home() {
       <main className="flex flex-col">
         {flexArr.map(item => (
           <ProductArt 
+            key={item.id}
             id={item.id}
             arr={item.arr}
             title={item.title}
@@ -24,6 +25,7 @@ export default function Home() {
         <section className="grid grid-cols-2 grid-rows-3 bg-light-white gap-3 bg-white">
           {gridArr.map(item => (
             <ProductArt 
+              key={item.id}
               id={item.id}
               arr={item.arr}
               title={item.title}

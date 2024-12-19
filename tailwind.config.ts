@@ -24,7 +24,8 @@ const config: Config = {
         'custom-dark': 'rgba(29, 29, 31, 1)',
         'custom-dark-gray': 'rgba(66, 66, 69, 1)',
         'custom-light-gray': 'rgba(245, 245, 247, 1)',
-        'custom-red': 'rgba(238, 0, 0, 1)',
+        'custom-red': 'rgba(238, 0, 0, 1)', 
+        'custom-dark-white': 'rgba(210, 210, 215, 1)',
       },
       letterSpacing: {
         'custom-1': '-0.28px',

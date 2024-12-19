@@ -23,8 +23,13 @@
 
 - [ ] to make macbook's page ((macbook's page))
 - [ ] to make page.tsx ((macbook's page))
-- [ ] to add images to 2nd & 3rd section ((macbook's page))
+- [ x ] to add images to 2nd & 3rd section ((macbook's page))
+- 
 - [ ] to make grid container of products ((macbook's page))
+- [ ] to make article of container
+- [ ] to make type of article
+- [ ] to make the function of the Article 
+- [ ] to make the massive of the Article 
 
 - [ ] to make section of 1st pazzles of desc ((macbook's page))
 - [ ] to make section of description of pages ((macbook's page))
