@@ -25,11 +25,13 @@
 - [ ] to make page.tsx ((macbook's page))
 - [ x ] to add images to 2nd & 3rd section ((macbook's page))
 - 
-- [ ] to make grid container of products ((macbook's page))
-- [ ] to make article of container
-- [ ] to make type of article
+- [ x ] to make grid container of products ((macbook's page))
+- [ x ] to make article of container
+- [ x ] to make type of article
 - [ ] to make the function of the Article 
 - [ ] to make the massive of the Article 
+- [ ] to finish the function of the Article 
+- [ ] to finish the massive of the Article 
 
 - [ ] to make section of 1st pazzles of desc ((macbook's page))
 - [ ] to make section of description of pages ((macbook's page))
@@ -39,6 +41,7 @@
 - [ ] to make section of app of pro ((macbook's page))
 - [ ] to make section of 3nd pazzles of desc ((macbook's page))
 - [ ] to make section of 4th pazzles (flex) of desc ((macbook's page))
+
 
 
 - [ ] to create a new branch for watch's page
