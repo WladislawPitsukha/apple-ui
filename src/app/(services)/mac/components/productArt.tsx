@@ -1,6 +1,7 @@
 import { ProductProps } from "@/types/typeProductProps";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { IconType } from "react-icons";
 
 export function CreateIcon({
@@ -26,17 +27,31 @@ export function CreateSymbol({
     )
 }
 
+export function MakeBrText(text: string) {
+    const arr = text.split(" ");
+    return(
+        <>
+            {arr.map((item, index) => (
+                <React.Fragment key={index}>
+                    {item}
+                    {index < arr.length - 1 && <br />}
+                </React.Fragment>
+            ))}
+        </>
+    )
+}
+
 export default function ProductArticle({
     id,
     head,
     body,
 }: ProductProps) {
-    const {title, model, price, link1, link2} = head;
+    const {versionProduct, title, model, price, link1, link2} = head;
     const {
-        versionDis, versionAddDis, coreVer1, coreVer1Text, coreVec2, coreVec2Text, 
-        weightNum, bateryText, cameraResolution, audioText, bateryImg, cameraImg, audioImg,
-        touchImg, touchText, memoryImg, memoryText, storageTitle, storageText,
-        chipImg, chipText, upText1, upText2,
+        versionDis, verAddNum, versionAddDis, coreVer1, coreVer1Text, coreVec2, coreVec2Text, 
+        weightNum, weightAddNum, bateryText, cameraResolution, audioText, bateryImg, cameraImg, 
+        audioImg, touchImg, touchText, memoryImg, memoryText, storageTitle, storageText,
+        chipImg, chipText, chipAddText, upText1, upText2,
     } = body
 
     return(
@@ -77,21 +92,25 @@ export default function ProductArticle({
             <main className="flex flex-col items-center justify-between gap-10">
                 <div className="flex flex-col items-center justify-between gap-2 h-14">
                     <h2 className="font-helvetica text-[20px] font-bold leading-[25px] tracking-[0.231px] text-center text-black">
-                        {versionDis}
+                        {
+                            versionProduct === "unit" ? versionDis : versionDis + " or " + verAddNum
+                        }
                     </h2>
                     <h4 className="font-helvetica text-[13px] font-normal leading-[20px] tracking-[-0.224px] text-center w-28 text-black">
                         {versionAddDis}
                     </h4>
                 </div>
-                <div className="flex flex-col items-center justify-between gap-2 h-24">
-                    <div className="flex justify-center items-center w-11 h-10 rounded-lg bg-black">
-                        <CreateSymbol icon={chipImg} className="text-custom-dark-white w-10 h-10" />
-                        <h6 className="m-0 font-helvetica text-[13px] uppercase font-normal leading-[20px] tracking-[-0.224px] text-center w-28 text-custom-dark-white">
-                            {chipText}
+                <div className="flex flex-col items-center justify-between gap-1 h-24">
+                    <div className="flex justify-center items-center w-auto h-auto rounded-lg bg-black p-2">
+                        <CreateSymbol icon={chipImg} className="text-custom-dark-white w-auto h-auto" />
+                        <h6 className="m-0 w-full font-helvetica text-[10px] uppercase font-normal leading-[20px] tracking-[-0.224px] text-center text-custom-dark-white">
+                            {MakeBrText(chipText)}
                         </h6>
                     </div>
-                    <h4 className=" font-helvetica text-[13px] font-normal leading-[20px] tracking-[-0.224px] text-center w-28 text-black">
-                        Apple {chipText} chip
+                    <h4 className=" font-helvetica text-[13px] w-28 font-normal leading-[20px] tracking-[-0.224px] text-center text-black">
+                        {
+                            versionProduct === "unit" ? "Apple " + chipText : "Apple " + chipText + " or Apple " + chipAddText
+                        }
                     </h4>
                 </div>
                 <div className="flex flex-col items-center justify-between gap-2 h-16">
@@ -128,7 +147,7 @@ export default function ProductArticle({
                 </div>
                 <div className="flex flex-col items-center justify-between gap-2 h-12">
                     <h2 className="font-helvetica text-[20px] font-bold leading-[25px] tracking-[0.231px] text-center text-black">
-                        {storageTitle}
+                        {storageTitle}TB
                     </h2>
                     <h4 className="font-helvetica text-[13px] font-normal leading-[20px] tracking-[-0.224px] text-center w-28 text-black">
                         {storageText}
@@ -156,7 +175,9 @@ export default function ProductArticle({
                 </div>
                 <div className="flex flex-col items-center justify-between gap-2 h-14">
                     <h2 className="font-helvetica text-[20px] font-bold leading-[25px] tracking-[0.231px] text-center text-black">
-                        {weightNum} lb.
+                        {
+                            versionProduct === "unit" ? `${weightNum} lb.` : `${weightNum} lb. or ${weightAddNum}`
+                        }
                     </h2>
                     <h4 className="font-helvetica text-[13px] font-normal leading-[20px] tracking-[-0.224px] text-center w-28 text-black">
                         Weight

@@ -30,7 +30,7 @@ export default function Pazzle() {
                     <h6 className="font-helvetica text-[17px] font-normal leading-[17px] tracking-[-0.357px] text-black">
                         Laptop
                     </h6>
-                    <div className="flex justify-between items-start w-full">
+                    <div className="flex justify-between gap-10 items-start w-full">
                         {productsMac.map((item) => (
                             <ProductArticle 
                                 id={item.id}

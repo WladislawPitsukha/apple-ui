@@ -10,6 +10,7 @@ export type ProductProps = {
 }
 
 export type ProductPropsHead = {
+    versionProduct?: string;
     title: string;
     model: string;
     price: number;
@@ -19,9 +20,11 @@ export type ProductPropsHead = {
 
 export type ProductPropsBody = {
     versionDis?: string;
+    verAddNum?: string; 
     versionAddDis: string;
     chipImg: IconType;
     chipText: string;
+    chipAddText?: string
     upText1: boolean;
     coreVer1: number;
     coreVer1Text: string;
@@ -30,7 +33,7 @@ export type ProductPropsBody = {
     coreVec2Text: string;
     memoryImg: IconType;
     memoryText: number;
-    storageTitle: string;
+    storageTitle: number;
     storageText: string;
     bateryImg: IconType;
     bateryText: string;
@@ -39,6 +42,7 @@ export type ProductPropsBody = {
     audioImg: IconType;
     audioText: string;
     weightNum: number;
+    weightAddNum?: number;
     touchImg: any;
     touchText: string;
 }
