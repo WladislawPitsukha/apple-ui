@@ -25,9 +25,7 @@ export default function RootLayout({
         className={geistMono.variable}
       >
         <NavBar />
-        <main>
-          {children}
-        </main>
+        {children}
         <Footer />
       </body>
     </html>
