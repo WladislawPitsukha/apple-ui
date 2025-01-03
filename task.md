@@ -14,6 +14,17 @@
 - [ x ] to finish the Footer ((main page))
 - [ x ] to make layout.tsx ((macbook's page))
 - [ x ] to make layout.tsx ((watch's page))
+- [ x ] to add images to 2nd & 3rd section ((macbook's page))
+- [ x ] to make grid container of products ((macbook's page))
+- [ x ] to make article of container
+- [ x ] to make type of article
+- [ x ] to make section of description of pages ((macbook's page))
+- [ x ] to make the function of the Article 
+- [ x ] to make the massive of the Article 
+- [ x ] to finish the massive of the Article 
+- [ x ] to make section of 2nd pazzles of PazzDescSec ((macbook's page))
+- [ x ] to make elements of pazzle of PazzDescSec ((macbook's page))
+- [ x ] to finish the function of the productArt ((macbook's page))
 
 ***
 
@@ -23,19 +34,9 @@
 
 - [ ] to make macbook's page ((macbook's page))
 - [ ] to make page.tsx ((macbook's page))
-- [ x ] to add images to 2nd & 3rd section ((macbook's page))
-- 
-- [ x ] to make grid container of products ((macbook's page))
-- [ x ] to make article of container
-- [ x ] to make type of article
-- [ ] to make the function of the Article 
-- [ ] to make the massive of the Article 
-- [ ] to finish the function of the Article 
-- [ ] to finish the massive of the Article 
 
-- [ ] to make section of 1st pazzles of desc ((macbook's page))
-- [ ] to make section of description of pages ((macbook's page))
-- [ ] to make section of 2nd pazzles of desc ((macbook's page))
+- [ ] to make section of 1st pazzles of PazzDescFir ((macbook's page))
+- [ ] to make elements of pazzle of PazzDescFir ((macbook's page))
 
 - [ ] to make section of app of build ((macbook's page))
 - [ ] to make section of app of pro ((macbook's page))
