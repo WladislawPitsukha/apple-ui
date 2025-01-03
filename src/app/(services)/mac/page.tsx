@@ -4,6 +4,9 @@ import Link from "next/link";
 import Mac1 from "@/assets/img/macbook/mac1.png";
 import Mac2 from "@/assets/img/macbook/mac2.png";
 import Pazzle from "./components/pazzle";
+import DescSect from "./components/descriptSect";
+import PazzDescSec from "./components/pazzDescSec";
+import PazzDescFir from "./components/pazzDescFir";
 
 export default function MacBookPage() {
     return(
@@ -88,6 +91,9 @@ export default function MacBookPage() {
             </section>
             <hr className="h-[10px] w-full bg-custom-white" />
             <Pazzle />
+            <PazzDescFir />
+            <DescSect />
+            <PazzDescSec />
         </div>
     )
 }
