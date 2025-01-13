@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { arrCardOffer, CardOfferProps } from "../types/typeCardOffer"
 import Image from "next/image"
-import { it } from "node:test"
 
 export function CardOffersMac({
     id,

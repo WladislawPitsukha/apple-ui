@@ -176,7 +176,7 @@ export default function ProductArticle({
                 <div className="flex flex-col items-center justify-between gap-2 h-14">
                     <h2 className="font-helvetica text-[20px] font-bold leading-[25px] tracking-[0.231px] text-center text-black">
                         {
-                            versionProduct === "unit" ? `${weightNum} lb.` : `${weightNum} lb. or ${weightAddNum}`
+                            versionProduct === "unit" ? `${weightNum} lb.` : `${weightNum} lb. or ${weightAddNum} lb.`
                         }
                     </h2>
                     <h4 className="font-helvetica text-[13px] font-normal leading-[20px] tracking-[-0.224px] text-center w-28 text-black">
