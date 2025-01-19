@@ -91,41 +91,6 @@ export default function HeaderSect() {
                     padBut={card.padBut}
                 />
             ))}
-            <section className="flex items-center justify-center p-[15px]">
-                <div className="flex items-center justify-start rounded-[34px]">
-                    <article className="flex flex-col items-start gap-2">
-                        <h4 className="font-helvetica text-[21px] font-bold leading-[28px] tracking-tight text-left text-white">
-                            A Guided Tour of
-                        </h4>
-                        <div className="flex flex-col items-start">
-                            {[{
-                                title: "iPhone 14 &",
-                                link: "",
-                            }, 
-                            {
-                                title: "iPhone 14 Pro",
-                                link: "",
-                            }].map((item, index) => (
-                                <Link href={item.link}>
-                                    <h2
-                                        className="font-helvetica text-[43px] font-bold leading-[52.01px] tracking-tighter text-left text-white" 
-                                        key={index}
-                                    >
-                                        {item.title}
-                                    </h2>
-                                </Link>
-                            ))}
-                        </div>
-                    </article>
-                    <Link href={""}>
-                        <button className="flex items-center justify-center rounded-full px-4 py-2 bg-white">
-                            <h5 className="font-helvetica text-[17px] leading-[20px] tracking-tightest text-center text-black">
-                                Watch the film
-                            </h5>
-                        </button>
-                    </Link>
-                </div>
-            </section>
         </header>
     )
 }

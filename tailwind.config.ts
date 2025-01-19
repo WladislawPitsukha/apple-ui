@@ -29,7 +29,8 @@ const config: Config = {
         'custom-light-brown': 'rgba(136, 136, 136, 1)',
         'custom-light-gray-card': 'rgba(250, 250, 250, 1)',
         'custom-green': 'rgba(0, 255, 0, 1)',
-        'cus-light-white': 'rgba(251, 251, 253, 1)'
+        'cus-light-white': 'rgba(251, 251, 253, 1)',
+        'fon-light-gray': 'rgba(242, 242, 242, 1)'
       },
       letterSpacing: {
         'custom-1': '-0.28px',

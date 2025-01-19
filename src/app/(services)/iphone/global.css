@@ -1,4 +1,11 @@
 .image-fon {
-    background-image: url("../../../assets/img/");
+    background-image: url("../../../assets/img/iphone/guidedTour.png");
+    background-size: cover;
+    width: 1410px;
+    height: 814px;
+}
+
+.cardSave {
+    background-image: url(../../../assets/img/iphone/waySave4.jpg);
     background-size: cover;
 }
