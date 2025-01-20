@@ -1,6 +1,9 @@
 import GuatedTour from "./components/guidedTour";
 import HeaderSect from "./components/headerSect";
+import MakeIphone from "./components/makeIphone";
 import PazzFeatAcc from "./components/pazzleFeatAcc";
+import PazzMoreIphone from "./components/pazzMoreIphone";
+import PazzOfferIphone from "./components/PazzOfferIphone";
 import PazzWaysSave from "./components/pazzWaysSafe";
 
 export default function IphonePage() {
@@ -10,6 +13,9 @@ export default function IphonePage() {
             <GuatedTour />
             <PazzWaysSave />
             <PazzFeatAcc />
+            <PazzOfferIphone />
+            <MakeIphone />
+            <PazzMoreIphone />
         </div>
     )
 }
