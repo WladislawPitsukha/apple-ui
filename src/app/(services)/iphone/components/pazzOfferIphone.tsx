@@ -47,7 +47,7 @@ export function CardOffer({
 
 export default function PazzOfferIphone() {
     return(
-        <section className="flex justify-evenly w-full h-auto items-start mt-[83px]">
+        <section className="flex justify-evenly w-full h-auto items-start pt-[83px] bg-fon-light-gray">
             {arrOfferIphone.map((item, index) => (
                 <CardOffer 
                     key={index}

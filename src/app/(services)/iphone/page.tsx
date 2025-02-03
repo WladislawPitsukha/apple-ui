@@ -3,7 +3,7 @@ import HeaderSect from "./components/headerSect";
 import MakeIphone from "./components/makeIphone";
 import PazzFeatAcc from "./components/pazzleFeatAcc";
 import PazzMoreIphone from "./components/pazzMoreIphone";
-import PazzOfferIphone from "./components/PazzOfferIphone";
+import PazzOfferIphone from "./components/pazzOfferIphone";
 import PazzWaysSave from "./components/pazzWaysSafe";
 
 export default function IphonePage() {
