@@ -1,7 +1,8 @@
 import Image from "next/image"
-import { arrFeatAcc, FeatAccProps } from "../types/typeFeatAcc"
 import Link from "next/link"
 import React from "react"
+import { arrFeatAcc } from "./constants/arrFeatAcc"
+import { FeatAccProps } from "../types/typeFeatAcc"
 
 export const MainBlock = {
     display: "flex",

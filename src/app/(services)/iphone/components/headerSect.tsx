@@ -1,6 +1,7 @@
 import Link from "next/link"
-import { arrCardSect, CardSectProps } from "../types/typeCardSect"
+import { CardSectProps } from "../types/typeCardSect"
 import Image from "next/image"
+import { arrCardSect } from "./constants/arrCardSect"
 
 export function CardSection({
     id,
@@ -67,28 +68,10 @@ export function CardSection({
 
 export default function HeaderSect() {
     return(
-        <header className="flex flex-col items-center">
+        <header className="flex flex-col items-center w-full h-auto">
             {arrCardSect.map((card) => (
                 <CardSection 
-                    id={card.id}
-                    flexDir={card.flexDir}
-                    update={card.update}
-                    model={card.model}
-                    title={card.title}
-                    widthTitle={card.widthTitle}
-                    price={card.price}
-                    priceMonth={card.priceMonth}
-                    period={card.period}
-                    buyLink={card.buyLink}
-                    learnLink={card.learnLink}
-                    img={card.img}
-                    imgHeight={card.imgHeight}
-                    imgWidth={card.imgWidth}
-                    textColor={card.textColor}
-                    fonColor={card.fonColor}
-                    gapNum={card.gapNum}
-                    padTop={card.padTop}
-                    padBut={card.padBut}
+                    {...card}
                 />
             ))}
         </header>

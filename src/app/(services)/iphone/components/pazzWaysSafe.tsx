@@ -1,7 +1,8 @@
 import Link from "next/link"
-import { arrWaySave, PartnersProps, WaySaveProps } from "../types/typeWaySave"
 import Image from "next/image"
 import "../global.css"
+import { PartnersProps, WaySaveProps } from "../types/typeWaySave"
+import { arrWaySave } from "./constants/arrWaySave"
 
 export async function CardPartner({
     id,
@@ -111,11 +112,11 @@ export default function PazzWaysSave() {
             <h1 className="font-helvetica text-[51px] mt-[106px] font-bold leading-[60px] tracking-custom-1 text-center text-custom-dark">
                 Ways to save on iPhone
             </h1>
-            <div className={`flex flex-col items-center justify-between gap-[40px] pt-[70px] px-[30px] pb-[30px]`}>
+            <div className={`flex flex-col items-center justify-between w-full h-auto gap-[40px] pt-[70px] px-[30px] pb-[30px]`}>
                 <CardWaySave 
                     {...arrWaySave[0]}
                 />
-                <div className="flex gap-[40px]">
+                <div className="flex gap-[40px] w-full">
                     {arrWaySave.slice(1, 3).map((item) => (
                         <CardWaySave {...item} />
                     ))}

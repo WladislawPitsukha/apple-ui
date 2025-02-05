@@ -8,7 +8,7 @@ import PazzWaysSave from "./components/pazzWaysSafe";
 
 export default function IphonePage() {
     return(
-        <div className="flex flex-col items-center w-full h-auto">
+        <div className="flex flex-col items-center w-full h-full">
             <HeaderSect />
             <GuatedTour />
             <PazzWaysSave />

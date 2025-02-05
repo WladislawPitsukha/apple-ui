@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { arrMoreIp } from "./utils/arrMoreIp"; 
+import { arrMoreIp } from "./constants/arrMoreIp"; 
 import { MoreIpProps } from "../types/typeMoreIp";
 import { IconType } from "react-icons";
 import { FaApple } from "react-icons/fa";

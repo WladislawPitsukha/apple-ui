@@ -1,7 +1,8 @@
 import { IconTree, IconType } from "react-icons";
-import { arrOfferIphone, OfferIphone } from "../types/typeOfferIphone";
+import { OfferIphone } from "../types/typeOfferIphone";
 import React from "react";
 import Link from "next/link";
+import { arrOfferIphone } from "./constants/arrOfferIphone";
 
 export function CreateIcon({
     icon

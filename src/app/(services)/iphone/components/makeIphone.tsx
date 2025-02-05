@@ -1,7 +1,8 @@
 import React from "react"
-import { arrMakeIphone, type MakeIphone } from "../types/typeMakeIp"
+import { type MakeIphone } from "../types/typeMakeIp"
 import Link from "next/link"
 import Image from "next/image"
+import { arrMakeIphone } from "./constants/arrMakeIphone"
 
 export function CardMakeIp({
     id,

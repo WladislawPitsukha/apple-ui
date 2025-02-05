@@ -4,8 +4,8 @@ import React from "react";
 
 export default function GuatedTour() {
     return(
-        <section className="flex items-center w-auto rounded-[34px] h-auto p-[15px] image-fon mx-[15px] mt-[15px] mb-[9px] bg-white">
-            <div className="flex flex-col items-start justify-start rounded-[34px] gap-[21px] ml-[218px]">
+        <section className="flex items-center w-full rounded-[34px] h-auto p-[15px] image-fon mx-[15px] mt-[15px] mb-[9px] bg-white">
+            <div className="flex flex-col items-start justify-start rounded-[34px] w-full gap-[21px] ml-[218px]">
                 <article className="flex flex-col items-start gap-2">
                     <h4 className="font-helvetica text-[21px] font-bold leading-[28px] tracking-tight text-left text-white">
                         A Guided Tour of
