@@ -3,7 +3,6 @@ import CardImage2 from "@/assets/img/iphone/CardImage2.png";
 import CardImage3 from "@/assets/img/iphone/CardImage3.png";
 
 import { FeatAccProps } from '../../types/typeFeatAcc';
-import { links } from "@/utils/ProductArtArr";
 
 export const arrFeatAcc: FeatAccProps[] = [
     {
