@@ -1,23 +1,8 @@
-import { productProps } from "@/utils/ProductArtArr";
-import { productsMac } from "@/utils/productsMac";
 import Link from "next/link";
 import ProductArticle from "./productArt";
+import { arrFotLinks } from "../constants/arrFotLinks";
+import { arrProductsMac } from "@/constants/productsMac";
 
-type FotlinkProps = {
-    title: string;
-    link: string | any;
-}
-
-const footerLinks: FotlinkProps[] = [
-    {
-        title: "Compare all Mac models",
-        link: ""
-    },
-    {
-        title: "Shop Mac",
-        link: ""
-    }
-]
 
 export default function Pazzle() {
     return(
@@ -31,18 +16,16 @@ export default function Pazzle() {
                         Laptop
                     </h6>
                     <div className="flex justify-between gap-10 items-start w-full">
-                        {productsMac.map((item) => (
+                        {arrProductsMac.map((item, index) => (
                             <ProductArticle 
-                                id={item.id}
-                                key={item.id}
-                                head={item.head}
-                                body={item.body}
+                                key={index}
+                                {...item}
                             />
                         ))}
                     </div>
                 </div>
                 <footer className="flex items-center justify-between gap-10 mt-6">
-                    {footerLinks.map((item) => (
+                    {arrFotLinks.map((item) => (
                         <Link href={item.link}>
                             <h5 className="font-helvetica text-[21px] font-normal leading-[29px] tracking-[0.231px] text-light-blue">
                                 {item.title}
