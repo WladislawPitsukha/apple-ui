@@ -1,7 +1,10 @@
+import CarouselAdve from "@/components/carouselAdve";
 import { ProductProps } from "@/types/typeProductProps";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
 import { IconType } from "react-icons";
 
 export function CreateIcon({
@@ -42,26 +45,76 @@ export function MakeBrText(text: string) {
 }
 
 export default function ProductArticle({
+    images,
     id,
     head,
     body,
 }: ProductProps) {
-    const {versionProduct, title, model, price, link1, link2} = head;
     const {
-        versionDis, verAddNum, versionAddDis, coreVer1, coreVer1Text, coreVec2, coreVec2Text, 
-        weightNum, weightAddNum, bateryText, cameraResolution, audioText, bateryImg, cameraImg, 
-        audioImg, touchImg, touchText, memoryImg, memoryText, storageTitle, storageText,
-        chipImg, chipText, chipAddText, upText1, upText2,
+        versionProduct,
+        title,
+        model,
+        price,
+        links: {
+            linkFirst,
+            linkSecond
+        }
+    } = head
+    const {
+        vers: {
+            versionDis,
+            verAddNum,
+            versionAddDis,
+        },
+        chip: {
+            chipImg,
+            chipText,
+            chipAddText,
+        },
+        core1: {
+            upText1,
+            coreVer1,
+            coreVer1Text,
+        },
+        core2: {
+            upText2,
+            coreVec2,
+            coreVec2Text,
+        },
+        memory: {
+            memoryImg,
+            memoryText,
+        },
+        storage: {
+            storageTitle,
+            storageText,
+        },
+        batery: {
+            bateryImg,
+            bateryText,
+        },
+        camera: {
+            cameraImg,
+            cameraResolution,
+        },
+        audio: {
+            audioImg,
+            audioText,
+        },
+        weight: {
+            weightNum,
+            weightAddNum,
+        },
+        touch: {
+            touchImg,
+            touchText,
+        }
     } = body
 
     return(
         <article className="flex flex-col w-auto justify-between items-center gap-[39px] min-h-[1400px]" key={id}>
             <header className="flex flex-col justify-between items-center gap-2">
-                <Image 
-                    className=""
-                    src=""
-                    alt="Product"
-                />
+                <CarouselAdve images={Object.values(images)} interval={2000}/>
                 <div className="flex flex-col items-center justify-between mt-6 gap-1">
                     <h2 className="font-helvetica text-[21px] font-bold leading-[28px] tracking-[0.216px] text-center text-black">
                         {title}
@@ -73,15 +126,15 @@ export default function ProductArticle({
                         From ${price}
                     </h3>
                 </div>
-                <div className="flex flex-col justify-between gap-1">
-                    <button className="flex justify-center items-center px-3 py-1 rounded-full bg-light-blue">
-                        <Link href={link1} className="no-underline">
+                <div className="flex flex-col items-center justify-between gap-1">
+                    <button className="flex justify-center items-center px-3 py-1 w-[45px] rounded-full bg-light-blue">
+                        <Link href={linkFirst} className="no-underline">
                             <h6 className="font-helvetica text-[12px] font-normal leading-[16px] tracking-[-0.12px] text-center text-white">
                                 Buy
                             </h6>
                         </Link>
                     </button>
-                    <Link href={link2} className="no-underline">
+                    <Link href={linkSecond} className="no-underline">
                         <h5 className="font-helvetica text-[14px] font-normal leading-[20px] tracking-[-0.224px] text-center text-light-blue">
                             Learn more
                         </h5>

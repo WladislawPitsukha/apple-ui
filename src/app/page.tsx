@@ -1,6 +1,6 @@
 import CarouselAdve from "@/components/carouselAdve";
 import ProductArt from "@/components/productArt";
-import { productProps } from "@/utils/ProductArtArr";
+import { productProps } from "@/constants/productArtArr";
 
 export default function Home() {
 
@@ -10,33 +10,20 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <main className="flex flex-col">
-        {flexArr.map(item => (
+        {flexArr.map((item, index) => (
           <ProductArt 
-            key={item.id}
-            id={item.id}
-            arr={item.arr}
-            title={item.title}
-            text={item.text}
-            model={item.model}
-            textColor={item.textColor}
-            img={item.img}
+            key={index}
+            {...item}
           />
         ))}
         <section className="grid grid-cols-2 grid-rows-3 bg-light-white gap-3 bg-white">
-          {gridArr.map(item => (
+          {gridArr.map((item, index) => (
             <ProductArt 
-              key={item.id}
-              id={item.id}
-              arr={item.arr}
-              title={item.title}
-              text={item.text}
-              model={item.model}
-              textColor={item.textColor}
-              img={item.img}
+              key={index}
+              {...item}
             />
           ))}
         </section>
-        <CarouselAdve />
       </main>
     </div>
   );
