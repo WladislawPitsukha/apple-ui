@@ -8,14 +8,18 @@ export type ProductProps = {
     body: ProductPropsBody;
 }
 
-type ProductPropsImg = {
+export type ProductPropsImg = {
     img1?: any | null;
     img2?: any | null;
     img3?: any | null;
     img4?: any | null;
+    img5?: any | null;
+    img6?: any | null;
+    img7?: any | null;
+    img8?: any | null;
 }
 
-type ProductPropsHead = {
+export type ProductPropsHead = {
     versionProduct?: string;
     title: string;
     model: string;
@@ -23,12 +27,12 @@ type ProductPropsHead = {
     links: ProductPropsHeadLink;
 }
 
-type ProductPropsHeadLink = {
+export type ProductPropsHeadLink = {
     linkFirst: string;
     linkSecond: string;
 }
 
-type ProductPropsBody = {
+export type ProductPropsBody = {
     vers: ProductPropsBodyVers;
     chip: ProductPropsBodyChip;
     core1: ProductPropsBodyCore1;
@@ -42,61 +46,61 @@ type ProductPropsBody = {
     touch: ProductPropsBodyTouch;
 }
 
-type ProductPropsBodyCore1 = {
+export type ProductPropsBodyCore1 = {
     upText1: boolean;
     coreVer1: number;
     coreVer1Text: string;
 }
 
-type ProductPropsBodyCore2 = {
+export type ProductPropsBodyCore2 = {
     upText2: boolean;
     coreVec2: number;
     coreVec2Text: string;
 }
 
-type ProductPropsBodyMemory = {
+export type ProductPropsBodyMemory = {
     memoryImg: IconType;
     memoryText: number;
 }
 
-type ProductPropsBodyStorage = {
+export type ProductPropsBodyStorage = {
     storageTitle: number;
     storageText: string;
 }
 
-type ProductPropsBodyBatery = {
+export type ProductPropsBodyBatery = {
     bateryImg: IconType;
     bateryText: string;
 }
 
-type ProductPropsBodyCamera = {
+export type ProductPropsBodyCamera = {
     cameraImg: IconType;
     cameraResolution: number;
 }
 
-type ProductPropsBodyVers = {
+export type ProductPropsBodyVers = {
     versionDis?: string;
     verAddNum?: string; 
     versionAddDis: string;
 }
 
-type ProductPropsBodyChip = {
+export type ProductPropsBodyChip = {
     chipImg: IconType;
     chipText: string;
     chipAddText?: string
 }
 
-type ProductPropsBodyAudio = {
+export type ProductPropsBodyAudio = {
     audioImg: IconType;
     audioText: string;
 }
 
-type ProductPropsBodyWeight = {
+export type ProductPropsBodyWeight = {
     weightNum: number;
     weightAddNum?: number;
 }
 
-type ProductPropsBodyTouch = {
+export type ProductPropsBodyTouch = {
     touchImg: any;
     touchText: string;
 }

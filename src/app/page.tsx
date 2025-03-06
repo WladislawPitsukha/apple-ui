@@ -1,4 +1,3 @@
-import CarouselAdve from "@/components/carouselAdve";
 import ProductArt from "@/components/productArt";
 import { productProps } from "@/constants/productArtArr";
 
