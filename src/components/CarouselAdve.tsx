@@ -37,7 +37,7 @@ export default function CarouselAdve({
     
     return (
         <div className="flex flex-col justify-center items-center w-auto h-auto overflow-hidden">
-            <div className="relative w-[239px] h-[167px]">
+            <div className="relative w-[239px] h-[257px]">
                 {images.map((image, index) => (
                     <div
                         key={index}
@@ -48,7 +48,7 @@ export default function CarouselAdve({
                         <Image 
                             src={image}
                             alt={`Slide ${index + 1}`}
-                            className='h-[167px] min-w-[188px] max-w-[239px]'
+                            className='h-[257px] min-w-[188px] max-w-[239px]'
                         />
                     </div>
                 ))}

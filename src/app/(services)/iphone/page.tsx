@@ -2,6 +2,7 @@ import GuatedTour from "./components/guidedTour";
 import HeaderSect from "./components/headerSect";
 import MakeIphone from "./components/makeIphone";
 import PazzFeatAcc from "./components/pazzleFeatAcc";
+import PazzleProducts from "./components/pazzleProducts";
 import PazzMoreIphone from "./components/pazzMoreIphone";
 import PazzOfferIphone from "./components/pazzOfferIphone";
 import PazzWaysSave from "./components/pazzWaysSafe";
@@ -11,6 +12,7 @@ export default function IphonePage() {
         <div className="flex flex-col items-center w-full h-full">
             <HeaderSect />
             <GuatedTour />
+            <PazzleProducts />
             <PazzWaysSave />
             <PazzFeatAcc />
             <PazzOfferIphone />

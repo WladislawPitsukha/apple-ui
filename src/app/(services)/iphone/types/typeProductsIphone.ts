@@ -12,7 +12,6 @@ export type ProIphoneProps = {
 
 type ProductPropsHead = {
     typeSelling: boolean;
-    versionProduct?: string;
     model: string;
     modelPhrase: string;
     price: number;
@@ -31,48 +30,52 @@ type ProductPropsBody = {
     mobInter: ProductPropsMobInter;
 }
 
-export type ProductPropsDisplay = ProductPropsSos & {
-    verMainDisp: number;
-    verAddDisp: number;
+export type PropsNull = {
+    obj?: boolean;
 }
 
-export type ProductPropsDinamic = ProductPropsActMode & {
-    verDinamic: string;
-    advan: string;
+export type ProductPropsActMode = PropsNull & {
+    icon: IconType;
+    text?: string | null;
 }
 
-export type ProductPropsSos = ProductPropsActMode & {
-    firAdvat?: string;
-    secAdvat?: string;
-    thiAdvat?: string;
+export type ProductPropsDisplay = ProductPropsSos & PropsNull & {
+    verMainDisp: number | null;
+    verAddDisp: number | null;
+}
+
+export type ProductPropsDinamic = ProductPropsActMode & PropsNull  & {
+    verDinamic: string | null;
+    advan: string | null;
+}
+
+export type ProductPropsSos = ProductPropsActMode & PropsNull  & {
+    firAdvat?: string | null;
+    secAdvat?: string | null;
+    thiAdvat?: string | null;
 }
 
 export type ProductPropsCamera = ProductPropsSos & ProductPropsSos & {
-    titleType: string;
-    pixels: number;
-    pixelsType?: string;
-    titleCamera?: string;
+    titleType: string | null;
+    pixels: number | null;
+    pixelsType?: string | null;
+    titleCamera?: string | null;
 }
 
-export type ProductPropsActMode = {
-    icon?: IconType;
-    text?: string;
+export type ProductPropsBatery = ProductPropsActMode & PropsNull  & {
+    timeWork: number | null;
 }
 
-export type ProductPropsBatery = ProductPropsActMode & {
-    timeWork: number;
+export type ProductPropsChip = ProductPropsActMode & PropsNull  & {
+    verChip: number | null;
+    verCore?: number | null;
 }
 
-export type ProductPropsChip = ProductPropsActMode & {
-    verChip: number;
-    verCore?: number;
+export type ProductPropsRecognizer = ProductPropsActMode & PropsNull  & {
+    typeID: string | null;
 }
 
-export type ProductPropsRecognizer = ProductPropsActMode & {
-    typeID: string;
-}
-
-export type ProductPropsMobInter = ProductPropsActMode & {
-    typeSpeed: string;
-    verCellular: number;
+export type ProductPropsMobInter = ProductPropsActMode & PropsNull  & {
+    typeSpeed: string | null;
+    verCellular: number | null;
 }
