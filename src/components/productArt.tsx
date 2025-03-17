@@ -1,15 +1,14 @@
-import { ProductArtProps } from "@/utils/ProductArtArr";
+import { ProductArtProps } from "@/types/typeProductArt";
 import Image from "next/image";
 
 export default function ProductArt({
         id,
-        arr, 
-        title, 
+        arr,
         text, 
         model,
-        textColor,
         img
     }: ProductArtProps) {
+        const {title, textObj, textColor} = text;
     return(
         <article className={`${id == 2 ? "bg-white" : ""} flex flex-col items-center gap-[15px] pt-14 pb-[511px] z-10 relative ${id == 2 || id == 4 || id == 8 || id == 7 || id == 8|| id == 9  ? "bg-light-white" : "bg-black"}`}>
             <div className="flex flex-col items-center z-20 gap-[15px]">
@@ -20,7 +19,7 @@ export default function ProductArt({
                     {model}
                 </h4>
                 <h3 className={`font-helvetica text-[24px] w-[330px] font-normal leading-[31px] tracking-custom-2 text-center text-${textColor}`}>
-                    {text}
+                    {textObj}
                 </h3>
             </div>
             <div className="flex gap-10">
