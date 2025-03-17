@@ -1,4 +1,4 @@
-import CarouselAdve from "@/components/carouselAdve";
+import CarouselAdve from "@/components/CarouselAdve";
 import { ProductProps } from "@/types/typeProductProps";
 
 import Image from "next/image";
